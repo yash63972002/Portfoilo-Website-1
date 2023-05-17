@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pp.css">
+    <script src="https://kit.fontawesome.com/5cbc551514.js" crossorigin="anonymous"></script>
+    <title>Personal Portfoilo Website</title>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Yash</span><br> from India</h1>
+        </div>
+    </div>
+</div>
+<!------------------about------------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Yashsu.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I'm Yash Pal Currently persuing Bachelor of Technology in Computer Science
+                    and Engineering from Anand Enngineering college, Agra. My area of intrest is 
+                    Web Development. My hobbies are playing Cricket and Litening Music. </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experince</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>2023 - Current</span><br>JavaScipt Programing</li>
+                        <li><span>2022 - 2023</span><br>Web Development</li>
+                        <li><span>01/08/2021 - 30/09/2021</span><br>Python</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 -Current</span><br>Create some working projects</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - current</span><br>B. Tech(cse) from AEC, Agra</li>
+                        <li><span>2019 - 2020</span><br>Senior Secondary Education</li>
+                        <li><span>2017 - 2018</span><br>Secondary Education</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------services------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>A web design service provides you with a customized website design 
+                    that's perfect for your business or personal site. </p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>User experience (UX) design is the process design teams 
+                    use to create products that provide meaningful and relevant 
+                    experiences to users. </p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-hive"></i>
+                <h2>Blockchain</h2>
+                <p> A blockchain is a decentralized, distributed and public digital ledger 
+                    that is used to record transactions across many computers so that 
+                    the record cannot be altered retroactively without the alteration of 
+                    all subsequent blocks and the consensus of the network.</p>
+                    <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------Portfolio----------------------->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Work</h2> 
+        <div class="work-list">
+            <div class="work">
+                <img src="pexels-geri-tech-14158915.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <P>Social media is a collective term for websites and applications that 
+                        focus on communication, community-based input, interaction, 
+                        content-sharing and collaboration. </P>
+                    <a href="https://blog.hootsuite.com/best-social-media-apps-list"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pexels-brett-jordan-5417836.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <P>Music is generally defined as the art of arranging sound to 
+                        create some combination of form, harmony, melody, rhythm or 
+                        otherwise expressive content. </P>
+                    <a href="https://wynk.in/music#install-app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="pexels-nataliya-vaitkevich-6214476.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <P>Shopping is an activity in which a customer browses the available 
+                        goods or services presented by one or more retailers with the 
+                        potential intent to purchase a suitable selection of them.</P>
+                    <a href="https://www.flipkart.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------------------contacts------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contacts Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" download="btn btn2" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-left">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> copyright @ Yash. Make with<i class="fa-solid fa-heart"></i> by easy tutorials</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBCCWGFP3LPyt9YZIBfnxffhmQVF_GGXxuPgb1CXaJOyzPEtWJiDLA6hC6R5pKAJRP/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
